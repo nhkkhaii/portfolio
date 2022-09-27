@@ -4,7 +4,7 @@ import styles from "./Experience.module.scss";
 const cx = classNames.bind(styles);
 
 function Experience() {
-  return <h1>Experience</h1>;
+  return <section id="experience">Experience</section>;
 }
 
 export default Experience;
