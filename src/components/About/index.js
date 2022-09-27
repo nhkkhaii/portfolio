@@ -6,13 +6,16 @@ const cx = classNames.bind(styles);
 function About() {
   return (
     <section id="about">
-      <h2>About Me</h2>
+      <h2 className={cx("about__title")}>About Me</h2>
       <div className={cx("container", "about__container")}>
         <div className={cx("about__me")}>
-          <div className={cx("about__me--image")}>
-            <img src={NHK} alt="About Image"></img>
-          </div>
+          <img
+            className={cx("about__me--image")}
+            src={NHK}
+            alt="About Image"
+          ></img>
         </div>
+        <div className={cx("about__info")}></div>
       </div>
     </section>
   );

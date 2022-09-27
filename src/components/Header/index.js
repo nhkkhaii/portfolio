@@ -2,19 +2,19 @@ import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { BsGithub, BsInstagram } from "react-icons/bs";
-import Me from "../../assets/img/NHK1.jpg";
+import Me from "../../assets/img/NHK3.jpg";
 const cx = classNames.bind(styles);
 
 function Header() {
   return (
     <header>
       <div className={cx("container", "header__container")}>
-        <h2 className={cx("header_name")}>Ninh Hoang Khai</h2>
+        <h2 className={cx("header__name")}>Ninh Hoang Khai</h2>
         <h5 className={cx("text-light", "header__content")}>
           I'm A Front-end Developer
         </h5>
         <div className={cx("me")}>
-          <img src={Me} alt="Me" />
+          <img className={cx("me--image")} src={Me} alt="Me" />
         </div>
         <div className={cx("header__socials")}>
           <a
