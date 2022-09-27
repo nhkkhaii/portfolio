@@ -1,0 +1,122 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-bg : linear-gradient(90deg, #00416A 0%, #E4E5E6 100%);
+    --color-primary: #ACB6E5;
+    --color-black : #000;
+    --color-white : #fff;
+    --transition:all 400ms case;
+    --color-light : rgba(255, 255, 255, 0.6);
+    --container-width-lg: 1200px;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+/* =========================GENERAL STYLES========================================*/
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8rem;
+}
+
+section > h2, section >h5{
+    text-align: center;
+    color : var(--color-light);
+}
+
+section > h2{
+    color : var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color : var(--color-light);
+}
+
+a{
+    color: var(--color-primary);
+    transition: var(--transition);
+    &:hover{
+        color : var(--color-white);
+    }
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+
+    &:hover{
+        background : var(--color-white);
+        color : var(--color-bg);
+        border-color: transparent;
+    }
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+img{
+    object-fit : cover;
+    width : 100%;
+    display: block;
+}
+
+/* ==========================MEDIA QUERIES======================================= */
+
+//Tablet
+@media screen and (max-width:1024px) and (min-width:740px)  {
+    .container{
+
+    }
+
+    section{
+        margin-top: 6rem;
+    }
+}
+
+// Mobie
+
+@media screen and (max-width:739px) {
+    .container{
+
+    }
+
+    section > h2{
+        margin-top: 2rem;
+    }
+}
