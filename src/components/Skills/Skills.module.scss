@@ -1,0 +1,41 @@
+
+.skills__title{
+    font-size: 4rem;
+    color: var(--color-white);
+}
+
+.skills__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    row-gap: 2rem;
+    .skills__fe,.skills__be{
+        background :rgba(0,0,0,0.3);
+        padding: 3.4rem 5rem;
+        border-radius: 2rem;
+        margin: 1.6rem;
+        border: 1px solid transparent;
+        text-align: center;
+        .skills__fe--title,.skills__be--title{
+            font-size: 1.8rem;
+            margin-bottom: 1.6rem;
+            color : var(--color-primary);
+        }
+
+        .skills__content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 2.5rem;
+            .skills__item{
+                text-align: center;
+                .skills__item--image{
+                    width:150px;
+                    height: 150px;
+                }
+                .skills__item--name{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    
+}

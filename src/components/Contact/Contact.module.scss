@@ -1,0 +1,42 @@
+
+.contact__title{
+    font-size: 4rem;
+    color: var(--color-white);
+}
+
+.contact__container{
+    margin-bottom: 5rem;
+    .contact__options{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2rem;       
+        .contact__option{
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 2rem;
+            color : var(--color-light);
+            padding:3rem;
+            margin: 0 1.6rem;
+            text-align: center;
+            border: 1px solid transparent;
+         
+            &:hover{
+                background-color:transparent;
+                transition: all 0.25s;
+                color: var(--color-white);   
+                .contact__option--mail{
+                    color: var(--color-white);
+                }
+            }
+            .contact__option--icon{
+                font-size: 2.2rem;
+            }
+            .contact__option--title{
+                font-size:1.8rem;
+                margin: 0.8rem 0;
+            }
+            .contact__option--content{
+                font-size:1.6rem;
+            }
+        }
+    }
+}

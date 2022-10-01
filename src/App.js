@@ -1,20 +1,25 @@
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import About from "./components/About";
-import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="grid">
       <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Contact />
+      <div className="grid wide">
+        <Nav />
+        <About />
+        <Skills />
+        <Resume />
+        <Contact />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

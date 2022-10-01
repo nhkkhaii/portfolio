@@ -1,10 +1,59 @@
 import classNames from "classnames/bind";
 import styles from "./Footer.module.scss";
-
+import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 const cx = classNames.bind(styles);
 
 function Footer() {
-  return <h1>Footer</h1>;
+  return (
+    <div className={cx("footer__container")}>
+      <h1 className={cx("footer__title")}>Ninh Hoang Khai</h1>
+      <h2 className={cx("footer__slogan")}>Always try harder than yesterday</h2>
+      <div className={cx("footer__socials")}>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/nhk.khai/"
+          className={cx("footer__socials--item")}
+        >
+          <FaFacebookF />
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/nhkkhaii"
+          className={cx("footer__socials--item")}
+        >
+          <AiOutlineGithub />
+        </a>
+
+        <a
+          target="_blank"
+          href="mailto:nhkkhaii@gmail.com"
+          className={cx("footer__socials--item")}
+        >
+          <MdOutlineEmail />
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/nhkkhaii"
+          className={cx("footer__socials--item")}
+        >
+          <AiOutlineInstagram />
+        </a>
+      </div>
+      <h5 className={cx("footer__copyright")}>
+        &copy; Copyright{" "}
+        <a
+          href="https://www.instagram.com/_youngboik/"
+          className={cx("footer__copyright--link")}
+          target="_blank"
+        >
+          Ninh Hoang Khai
+        </a>
+        . All Rights Reserved
+      </h5>
+    </div>
+  );
 }
 
 export default Footer;

@@ -1,0 +1,43 @@
+.footer__container{
+    background:rgba(0,0,0,0.3);
+    height: 250px;
+    text-align: center;
+    padding: 2.5rem;
+    .footer__title{
+        font-size: 4rem;
+    }
+    .footer__slogan{
+        font-size: 1.6rem;
+        font-style: italic;
+        margin: 1rem 0;
+    }
+    .footer__socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .footer__socials--item{
+            margin: 0.8rem;
+            font-size: 1.6rem;
+            border-radius: 50%;
+            background-color: var(--color-black);
+            color: var(--color-white);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s;
+            &:hover{
+                color: var(--color-white);
+                opacity: 0.8;
+            }
+            &:active{
+                scale: 0.8;
+            }
+        }
+        margin-bottom: 1rem;
+    }
+    .footer__copyright{
+        font-size:1.4rem
+    }
+}

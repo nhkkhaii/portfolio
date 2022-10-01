@@ -7,12 +7,12 @@ const cx = classNames.bind(styles);
 
 function Header() {
   return (
-    <header>
-      <div className={cx("container", "header__container")}>
-        <h2 className={cx("header__name")}>Ninh Hoang Khai</h2>
-        <h5 className={cx("text-light", "header__content")}>
+    <header id="header">
+      <div className={cx("header__container")}>
+        <h1 className={cx("header__name")}>Ninh Hoang Khai</h1>
+        <h2 className={cx("text-light", "header__content")}>
           I'm A Front-end Developer
-        </h5>
+        </h2>
         <div className={cx("me")}>
           <img className={cx("me--image")} src={Me} alt="Me" />
         </div>

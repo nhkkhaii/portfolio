@@ -17,7 +17,9 @@
             margin: 0 1rem;
             transition: all 0.2s;
             font-size: 1.8rem;
-   
+            &:hover{
+                color : var(--color-white);
+            }
         }
     }
 
