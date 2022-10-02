@@ -9,25 +9,29 @@ function About() {
   return (
     <section id="about">
       <h1 className={cx("about__title")}>About Me</h1>
-      <h2>
+      <h2 className={cx("about__overview")}>
         With a big interest in Software Development, I have taken 4 projects
         during University. In the next three years, I want to be a Senior
         Full-stack Software Engineer.
       </h2>
       <div className={cx("about__container", "row")}>
-        <div className={cx("about__me", "col", "c-5")}>
-          <img
-            className={cx("about__me--image")}
-            src={NHK}
-            alt="About Image"
-          ></img>
+        <div className={cx("about__me", "col", "c-12", "m-12", "l-5")}>
+          <img className={cx("about__me--image")} src={NHK} alt="About" />
         </div>
-        <div className={cx("about__info", "col", "c-7")}>
+        <div className={cx("about__info", "col", "c-12", "m-12", "l-7")}>
           <h3 className={cx("about__info--title")}>
             Web Designer & Frontend Developer
           </h3>
           <div className={cx("about__content", "row")}>
-            <div className={cx("about__content--left", "col", "c-6")}>
+            <div
+              className={cx(
+                "about__content--left",
+                "col",
+                "c-12",
+                "m-12",
+                "l-6"
+              )}
+            >
               <ul className={cx("about__list")}>
                 <li className={cx("about__list--item")}>
                   <BiChevronRight />
@@ -57,7 +61,16 @@ function About() {
                 </li>
               </ul>
             </div>
-            <div className={cx("about__content--right", "col", "c-6")}>
+            <div
+              className={cx(
+                "about__content--right",
+                "col",
+                "col",
+                "c-12",
+                "m-12",
+                "l-6"
+              )}
+            >
               <ul className={cx("about__list")}>
                 <li className={cx("about__list--item")}>
                   <BiChevronRight />

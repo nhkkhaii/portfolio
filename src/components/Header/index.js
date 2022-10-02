@@ -21,6 +21,7 @@ function Header() {
             className={cx("header__socials--item")}
             href="https://www.facebook.com/nhk.khai/"
             target="_blank"
+            rel="noreferrer"
           >
             <FaFacebookF />
           </a>
@@ -28,6 +29,7 @@ function Header() {
             className={cx("header__socials--item")}
             href="https://github.com/nhkkhaii"
             target="_blank"
+            rel="noreferrer"
           >
             <BsGithub />
           </a>
@@ -35,6 +37,7 @@ function Header() {
             className={cx("header__socials--item")}
             href="https://www.instagram.com/_youngboik/"
             target="_blank"
+            rel="noreferrer"
           >
             <BsInstagram />
           </a>

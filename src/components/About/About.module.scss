@@ -3,14 +3,17 @@
     color: var(--color-white);
 }
 
+.about__overview{
+    font-size:1.6rem;
+    text-align: center; 
+}
 .about__container{
     margin-top: 1.6rem;
     display: flex;
 
     .about__me{
         .about__me--image{
-            width: 100%;
-            
+            width: 100%;          
         }
     }
     .about__info{
@@ -49,5 +52,38 @@
                 }
             }
         }
+    }
+}
+
+// MEDIA QUERIES
+// Tablet
+@media (max-width: 1023px) and (min-width: 740px){
+    .about__title{
+        font-size: 3.5rem;
+    }
+    
+    .about__container{
+        .about__me{
+            margin-bottom: 16px;
+        }
+    }
+}
+// Mobie
+@media (max-width: 739px){
+    .about__title{
+        font-size: 3rem;
+    }
+    .about__overview{
+        text-align: justify; 
+        padding: 0 16px;
+    }
+
+    .about__container{
+        margin-top: 1.6rem;
+        padding: 0 16px !important;
+        .about__me{
+            margin-bottom: 16px;
+        }
+       
     }
 }

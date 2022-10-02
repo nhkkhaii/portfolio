@@ -41,3 +41,27 @@
     
 }
 
+// MEDIA QUERIES
+// Tablet
+@media (max-width: 1023px) and (min-width: 740px){
+    .header__container{
+        .header__name{
+            font-size: 3.5rem;
+        }
+        .header__content{
+            font-size:1.8rem;
+        }
+    }
+    
+}
+
+@media (max-width: 739px){
+    .header__container{
+        .header__name{
+            font-size: 3rem;
+        }
+        .header__content{
+            font-size:1.8rem;
+        }
+    }
+}

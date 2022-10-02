@@ -15,6 +15,7 @@ function Footer() {
           target="_blank"
           href="https://www.facebook.com/nhk.khai/"
           className={cx("footer__socials--item")}
+          rel="noreferrer"
         >
           <FaFacebookF />
         </a>
@@ -22,6 +23,7 @@ function Footer() {
           target="_blank"
           href="https://github.com/nhkkhaii"
           className={cx("footer__socials--item")}
+          rel="noreferrer"
         >
           <AiOutlineGithub />
         </a>
@@ -30,6 +32,7 @@ function Footer() {
           target="_blank"
           href="mailto:nhkkhaii@gmail.com"
           className={cx("footer__socials--item")}
+          rel="noreferrer"
         >
           <MdOutlineEmail />
         </a>
@@ -37,6 +40,7 @@ function Footer() {
           target="_blank"
           href="https://github.com/nhkkhaii"
           className={cx("footer__socials--item")}
+          rel="noreferrer"
         >
           <AiOutlineInstagram />
         </a>
@@ -46,6 +50,7 @@ function Footer() {
         <a
           href="https://www.instagram.com/_youngboik/"
           className={cx("footer__copyright--link")}
+          rel="noreferrer"
           target="_blank"
         >
           Ninh Hoang Khai

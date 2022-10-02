@@ -1,18 +1,18 @@
 
 .skills__title{
     font-size: 4rem;
+    width: 100%;
+    text-align: center;
     color: var(--color-white);
 }
 
 .skills__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    row-gap: 2rem;
+    display: flex;
+    justify-content:space-around;
     .skills__fe,.skills__be{
         background :rgba(0,0,0,0.3);
-        padding: 3.4rem 5rem;
+        padding: 30px 40px;
         border-radius: 2rem;
-        margin: 1.6rem;
         border: 1px solid transparent;
         text-align: center;
         .skills__fe--title,.skills__be--title{
@@ -22,20 +22,50 @@
         }
 
         .skills__content{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            row-gap: 2.5rem;
             .skills__item{
                 text-align: center;
                 .skills__item--image{
-                    width:150px;
-                    height: 150px;
+                    width:100%;
+                    object-fit :contain ;
                 }
                 .skills__item--name{
                     font-size: 1.6rem;
                 }
             }
         }
+    }
+    
+}
+
+// MEDIA QUERIES
+// Tablet
+@media (max-width: 1023px) and (min-width: 740px){
+    .skills__title{
+        font-size: 3rem;
+    }
+
+}
+// Mobie
+@media (max-width: 739px){
+    .skills__container{
+        .skills__fe,.skills__be{
+            margin: 16px;
+            .skills__content{
+                .skills__item{
+                    .skills__item--image{
+                        width:150px ;
+                        left:50%;
+                        position: relative;
+                        transform: translateX(-50%);
+                        object-fit :contain ;
+                    }
+                    .skills__item--name{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
     }
     
 }
