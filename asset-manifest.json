@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1d43f735.css",
-    "main.js": "/portfolio/static/js/main.9d3aba74.js",
+    "main.css": "/portfolio/static/css/main.e59fbbe1.css",
+    "main.js": "/portfolio/static/js/main.10c5ab85.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/NHK.jpg": "/portfolio/static/media/NHK.cc6a8060ba025ec04d0c.jpg",
     "static/media/NHK3.jpg": "/portfolio/static/media/NHK3.b7d0ee30c281199f3dca.jpg",
-    "static/media/NHK.jpg": "/portfolio/static/media/NHK.84c781acfbed7849d644.jpg",
     "static/media/sql_server.png": "/portfolio/static/media/sql_server.27b8a8a0490cdc54f7be.png",
     "static/media/CV_Ninh_Hoang_Khai_Front_End_Developer.pdf": "/portfolio/static/media/CV_Ninh_Hoang_Khai_Front_End_Developer.71542c54ea566cc41191.pdf",
     "static/media/reactjs_portfolio.png": "/portfolio/static/media/reactjs_portfolio.73ee87a686b3f4b3ee58.png",
@@ -13,12 +13,12 @@
     "static/media/html_portfolio.png": "/portfolio/static/media/html_portfolio.b862c881fea3a50e163e.png",
     "static/media/css_portfolio.png": "/portfolio/static/media/css_portfolio.5212aa5d22835cfccf9e.png",
     "index.html": "/portfolio/index.html",
-    "main.1d43f735.css.map": "/portfolio/static/css/main.1d43f735.css.map",
-    "main.9d3aba74.js.map": "/portfolio/static/js/main.9d3aba74.js.map",
+    "main.e59fbbe1.css.map": "/portfolio/static/css/main.e59fbbe1.css.map",
+    "main.10c5ab85.js.map": "/portfolio/static/js/main.10c5ab85.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d43f735.css",
-    "static/js/main.9d3aba74.js"
+    "static/css/main.e59fbbe1.css",
+    "static/js/main.10c5ab85.js"
   ]
 }
