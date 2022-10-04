@@ -6,9 +6,11 @@ const cx = classNames.bind(styles);
 
 function Contact() {
   return (
-    <section id="contact">
-      <h1 className={cx("contact__title")}>Contact Me</h1>
-      <div className={cx("contact__container")}>
+    <section id="contact" className={cx("item")}>
+      <h1 className={cx("contact__title", "showtotop", "delay-02")}>
+        Contact Me
+      </h1>
+      <div className={cx("contact__container", "showtotop", "delay-04")}>
         <div className={cx("contact__options", "row")}>
           <div className={cx("contact__option", "col", "l-3", "m-3", "c-8")}>
             <BsPhone className={cx("contact__option--icon")} />

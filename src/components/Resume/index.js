@@ -4,10 +4,18 @@ const cx = classNames.bind(styles);
 
 function Resume() {
   return (
-    <section id="resume">
-      <h1 className={cx("Resume__title")}>Resume</h1>
+    <section id="resume" className={cx("item")}>
+      <h1 className={cx("Resume__title", "showtotop", "delay-02")}>Resume</h1>
       <div className={cx("Resume__container", "row")}>
-        <div className={cx("Resume__wrapper", "col", "c-6")}>
+        <div
+          className={cx(
+            "Resume__wrapper",
+            "col",
+            "c-6",
+            "showtotop",
+            "delay-04"
+          )}
+        >
           <h2 className={cx("Resume__wrapper--title")}>Education</h2>
           <div className={cx("Resume__item")}>
             <h3 className={cx("Resume__item--name")}>BACHELOR'S DEGREE</h3>
@@ -23,11 +31,18 @@ function Resume() {
             </p>
           </div>
         </div>
-        <div className={cx("Resume__wrapper", "col", "c-6")}>
+        <div
+          className={cx(
+            "Resume__wrapper",
+            "col",
+            "c-6",
+            "showtotop",
+            "delay-04"
+          )}
+        >
           <h2 className={cx("Resume__wrapper--title")}>
             Professional Experience
           </h2>
-         
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 function Footer() {
   return (
-    <div className={cx("footer__container")}>
+    <div className={cx("footer__container", "item")}>
       <h1 className={cx("footer__title")}>Ninh Hoang Khai</h1>
       <h2 className={cx("footer__slogan")}>Always try harder than yesterday</h2>
       <div className={cx("footer__socials")}>

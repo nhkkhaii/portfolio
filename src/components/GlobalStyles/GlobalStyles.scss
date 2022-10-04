@@ -7,12 +7,10 @@
 }
 
 :root {
-  --color-bg: linear-gradient(135deg, #000000 0%, #ffffff 120%);
-  --color-primary: #bcc5d6;
+  --color-bg: linear-gradient(135deg, #000 0%, #fff 120%);
   --color-black: #000;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
-  --container-width-lg: 1200px;
 }
 
 html {
@@ -27,11 +25,6 @@ body {
 }
 
 /* =========================GENERAL STYLES========================================*/
-
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}
 
 h1,
 h2,
@@ -62,7 +55,7 @@ section > h1 {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-light);
 }
 
 img {

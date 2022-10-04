@@ -1,155 +1,152 @@
-.Resume__title{
-    font-size: 4rem;
-    color: var(--color-white);
+.Resume__title {
+  font-size: 4rem;
+  color: var(--color-white);
 }
 
-.Resume__container{
-    .Resume__wrapper{
-        padding:0 24px;
-        .Resume__wrapper--title{
-            font-size:3rem;
-            margin-bottom: 1.6rem;
-        }
-        .Resume__item{
-            padding: 0 0 20px 20px;
-            margin-top: -2px;
-            border-left: 2px solid #0563bb;
-            position: relative;
-            &::before{
-                content: "";
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                border-radius: 50px;
-                left: -10px;
-                top: 0;
-                background: #fff;
-                border: 2px solid #0563bb;
-            }
-
-            .Resume__item--name{
-                line-height: 18px;
-                font-size: 2rem;
-                font-weight: 600;
-                text-transform: uppercase;
-                color: #000;
-            }
-
-            .Resume__item--date{
-                font-size: 1.6rem;
-                margin: 8px 0;
-                padding: 0 10px;
-            }
-
-            .Resume__item--location{
-                font-size: 1.6rem;
-                font-style:italic;
-            }
-
-            .Resume__item--description{
-                margin: 8px 0;
-                font-size: 1.6rem;
-
-            }
-
-            .Resume__item--role{
-                margin: 8px 0;
-                font-size: 1.6rem;
-            }
-        }
+.Resume__container {
+  .Resume__wrapper {
+    padding: 0 24px;
+    .Resume__wrapper--title {
+      font-size: 3rem;
+      margin-bottom: 1.6rem;
     }
+    .Resume__item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid var(--color-black);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        left: -10px;
+        top: 0;
+        background: var(--color-bg);
+        border: 2px solid var(--color-black);
+      }
+
+      .Resume__item--name {
+        line-height: 18px;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      .Resume__item--date {
+        font-size: 1.6rem;
+        margin: 8px 0;
+        padding: 0 10px;
+      }
+
+      .Resume__item--location {
+        font-size: 1.6rem;
+        font-style: italic;
+      }
+
+      .Resume__item--description {
+        margin: 8px 0;
+        font-size: 1.6rem;
+      }
+
+      .Resume__item--role {
+        margin: 8px 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 // MEDIA QUERIES
 // Tablet
-@media (max-width: 1023px) and (min-width: 740px){
-    .Resume__title{
-        font-size: 3rem;
-    }
-    .Resume__container{
-        .Resume__wrapper{
-            .Resume__wrapper--title{
-                font-size:2rem;
-            }
+@media (max-width: 1023px) and (min-width: 740px) {
+  .Resume__title {
+    font-size: 3rem;
+  }
+  .Resume__container {
+    .Resume__wrapper {
+      .Resume__wrapper--title {
+        font-size: 2rem;
+      }
 
-            .Resume__item{
-                &::before{
-                    content: "";
-                    width: 12px;
-                    height: 12px;
-                    left: -9px;
-                }
-    
-                .Resume__item--name{
-                    font-size: 1.7rem;
-                }
-    
-                .Resume__item--date{
-                    font-size: 1.3rem;
-                }
-    
-                .Resume__item--location{
-                    font-size: 1.4rem;
-                    font-style:italic;
-                }
-    
-                .Resume__item--description{
-                    margin: 8px 0;
-                    font-size: 1.4rem;
-    
-                }
-    
-                .Resume__item--role{
-                    margin: 8px 0;
-                    font-size: 1.4rem;
-                }
-            }
+      .Resume__item {
+        &::before {
+          content: "";
+          width: 12px;
+          height: 12px;
+          left: -9px;
         }
+
+        .Resume__item--name {
+          font-size: 1.7rem;
+        }
+
+        .Resume__item--date {
+          font-size: 1.3rem;
+        }
+
+        .Resume__item--location {
+          font-size: 1.4rem;
+          font-style: italic;
+        }
+
+        .Resume__item--description {
+          margin: 8px 0;
+          font-size: 1.4rem;
+        }
+
+        .Resume__item--role {
+          margin: 8px 0;
+          font-size: 1.4rem;
+        }
+      }
     }
+  }
 }
 
-@media (max-width: 739px){
-    .Resume__title{
-        font-size: 3rem;
-    }
-    .Resume__container{
-        .Resume__wrapper{
-            .Resume__wrapper--title{
-                font-size:2rem;
-            }
+@media (max-width: 739px) {
+  .Resume__title {
+    font-size: 3rem;
+  }
+  .Resume__container {
+    .Resume__wrapper {
+      .Resume__wrapper--title {
+        font-size: 2rem;
+      }
 
-            .Resume__item{
-                &::before{
-                    content: "";
-                    width: 12px;
-                    height: 12px;
-                    left: -9px;
-                }
-    
-                .Resume__item--name{
-                    font-size: 1.7rem;
-                }
-    
-                .Resume__item--date{
-                    font-size: 1.3rem;
-                }
-    
-                .Resume__item--location{
-                    font-size: 1.4rem;
-                    font-style:italic;
-                }
-    
-                .Resume__item--description{
-                    margin: 8px 0;
-                    font-size: 1.4rem;
-    
-                }
-    
-                .Resume__item--role{
-                    margin: 8px 0;
-                    font-size: 1.4rem;
-                }
-            }
+      .Resume__item {
+        &::before {
+          content: "";
+          width: 12px;
+          height: 12px;
+          left: -9px;
         }
+
+        .Resume__item--name {
+          font-size: 1.7rem;
+        }
+
+        .Resume__item--date {
+          font-size: 1.3rem;
+        }
+
+        .Resume__item--location {
+          font-size: 1.4rem;
+          font-style: italic;
+        }
+
+        .Resume__item--description {
+          margin: 8px 0;
+          font-size: 1.4rem;
+        }
+
+        .Resume__item--role {
+          margin: 8px 0;
+          font-size: 1.4rem;
+        }
+      }
     }
+  }
 }

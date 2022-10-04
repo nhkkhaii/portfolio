@@ -1,4 +1,5 @@
 import classNames from "classnames/bind";
+
 import styles from "./About.module.scss";
 import NHK from "../../assets/img/NHK.jpg";
 import CV from "../../assets/CV_Ninh_Hoang_Khai_Front_End_Developer.pdf";
@@ -7,18 +8,39 @@ const cx = classNames.bind(styles);
 
 function About() {
   return (
-    <section id="about">
-      <h1 className={cx("about__title")}>About Me</h1>
-      <h2 className={cx("about__overview")}>
+    <section id="about" className={cx("item")}>
+      <h1 className={cx("about__title", "showtotop", "delay-02")}>About Me</h1>
+      <h2 className={cx("about__overview", "showtotop", "delay-02")}>
         With a big interest in Software Development, I have taken 4 projects
         during University. In the next three years, I want to be a Senior
-        Full-stack Software Engineer.
+        Full-stack Software Engineer. I always want to learn new things so that
+        I can develop myself more
       </h2>
       <div className={cx("about__container", "row")}>
-        <div className={cx("about__me", "col", "c-12", "m-12", "l-5")}>
+        <div
+          className={cx(
+            "about__me",
+            "col",
+            "c-12",
+            "m-12",
+            "l-5",
+            "showtotop",
+            "delay-04"
+          )}
+        >
           <img className={cx("about__me--image")} src={NHK} alt="About" />
         </div>
-        <div className={cx("about__info", "col", "c-12", "m-12", "l-7")}>
+        <div
+          className={cx(
+            "about__info",
+            "col",
+            "c-12",
+            "m-12",
+            "l-7",
+            "showtotop",
+            "delay-06"
+          )}
+        >
           <h3 className={cx("about__info--title")}>
             Web Designer & Frontend Developer
           </h3>
@@ -36,7 +58,7 @@ function About() {
                 <li className={cx("about__list--item")}>
                   <BiChevronRight />
                   <strong>Full Name : </strong>
-                  <span>Ninh Hoàng Khải</span>
+                  <span>Ninh Hoang Khai</span>
                 </li>
                 <li className={cx("about__list--item")}>
                   <BiChevronRight />
@@ -94,16 +116,24 @@ function About() {
                 </li>
               </ul>
             </div>
-            <div className={cx("about__action")}>
-              <a
-                className={cx("about__action--cv")}
-                href={CV}
-                download
-                alt="My CV"
-              >
-                Download CV
-              </a>
-            </div>
+          </div>
+          <div className={cx("about__summary")}>
+            <h3 className={cx("about__summary--title")}>Summary :</h3>
+            <p className={cx("about__summary--content")}>
+              Learning new languages and technologies is what I am passionate
+              about. I like helping others and working well with the group.I am
+              eager to learn new things to be able to develop myself better
+            </p>
+          </div>
+          <div className={cx("about__action")}>
+            <a
+              className={cx("about__action--cv")}
+              href={CV}
+              download
+              alt="My CV"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>

@@ -7,16 +7,29 @@ const cx = classNames.bind(styles);
 
 function Header() {
   return (
-    <header id="header">
+    <div id="header" className={cx("item")}>
       <div className={cx("header__container")}>
-        <h1 className={cx("header__name")}>Ninh Hoang Khai</h1>
-        <h2 className={cx("text-light", "header__content")}>
+        <h1 className={cx("header__name", "showtotop", "delay-02")}>
+          Ninh Hoang Khai
+        </h1>
+        <h2
+          className={cx(
+            "text-light",
+            "header__content",
+            "showtotop",
+            "delay-02"
+          )}
+        >
           I'm A Front-end Developer
         </h2>
         <div className={cx("me")}>
-          <img className={cx("me--image")} src={Me} alt="Me" />
+          <img
+            className={cx("me--image", "showtotop", "delay-04")}
+            src={Me}
+            alt="Me"
+          />
         </div>
-        <div className={cx("header__socials")}>
+        <div className={cx("header__socials", "showtotop", "delay-06")}>
           <a
             className={cx("header__socials--item")}
             href="https://www.facebook.com/nhk.khai/"
@@ -43,7 +56,7 @@ function Header() {
           </a>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 
