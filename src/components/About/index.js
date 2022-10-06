@@ -13,8 +13,7 @@ function About() {
       <h2 className={cx("about__overview", "showtotop", "delay-02")}>
         With a big interest in Software Development, I have taken 4 projects
         during University. In the next three years, I want to be a Senior
-        Full-stack Software Engineer. I always want to learn new things so that
-        I can develop myself more
+        Full-stack Software Engineer.
       </h2>
       <div className={cx("about__container", "row")}>
         <div

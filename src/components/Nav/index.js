@@ -9,57 +9,70 @@ import {
   AiOutlineAppstore,
 } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
+import { Link } from "react-scroll";
 import ScrollIntoView from "react-scroll-into-view";
 const cx = classNames.bind(styles);
 
 function Nav() {
-  const [activeNav, setActiveNav] = useState("home");
-
   return (
     <nav className={cx("navbar")}>
-      <ScrollIntoView selector="#header">
-        <button
-          onClick={() => setActiveNav("home")}
-          className={cx(activeNav === "home" ? "active" : "", "navbar__item")}
-        >
-          <AiOutlineHome />
-        </button>
-      </ScrollIntoView>
-      <ScrollIntoView selector="#about">
-        <button
-          onClick={() => setActiveNav("about")}
-          className={cx(activeNav === "about" ? "active" : "", "navbar__item")}
-        >
-          <AiOutlineUser />
-        </button>
-      </ScrollIntoView>
-      <ScrollIntoView selector="#skills">
-        <button
-          onClick={() => setActiveNav("skills")}
-          className={cx(activeNav === "skills" ? "active" : "", "navbar__item")}
-        >
-          <AiOutlineAppstore />
-        </button>
-      </ScrollIntoView>
-      <ScrollIntoView selector="#resume">
-        <button
-          onClick={() => setActiveNav("resume")}
-          className={cx(activeNav === "resume" ? "active" : "", "navbar__item")}
-        >
-          <BiBook />
-        </button>
-      </ScrollIntoView>
-      <ScrollIntoView selector="#contact">
-        <button
-          onClick={() => setActiveNav("contact")}
-          className={cx(
-            activeNav === "contact" ? "active" : "",
-            "navbar__item"
-          )}
-        >
-          <AiOutlineMessage />
-        </button>
-      </ScrollIntoView>
+      <Link
+        activeClass={cx("active")}
+        spy={true}
+        smooth={true}
+        duration={50}
+        offset={-50}
+        isDynamic={true}
+        to="header"
+        className={cx("navbar__item")}
+      >
+        <AiOutlineHome />
+      </Link>
+      <Link
+        activeClass={cx("active")}
+        spy={true}
+        smooth={true}
+        duration={50}
+        offset={-50}
+        to="about"
+        className={cx("navbar__item")}
+      >
+        <AiOutlineUser />
+      </Link>
+      <Link
+        activeClass={cx("active")}
+        spy={true}
+        smooth={true}
+        duration={50}
+        offset={-50}
+        to="skills"
+        className={cx("navbar__item")}
+      >
+        <AiOutlineAppstore />
+      </Link>
+      <Link
+        activeClass={cx("active")}
+        spy={true}
+        smooth={true}
+        duration={50}
+        offset={-50}
+        to="resume"
+        className={cx("navbar__item")}
+      >
+        <BiBook />
+      </Link>
+      <Link
+        activeClass={cx("active")}
+        spy={true}
+        smooth={true}
+        duration={50}
+        offset={-50}
+        to="contact"
+        isDynamic={true}
+        className={cx("navbar__item")}
+      >
+        <AiOutlineMessage />
+      </Link>
     </nav>
   );
 }
